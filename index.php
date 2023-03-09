@@ -12,7 +12,7 @@ include './inc/pdo.php';
 // $films = $resultat->fetchAll();
 
 // dd(getLimitMovies(2));
-// $i = 1;
+$i = 1;
 // foreach (getLimitMovies(5) as $film) {
 //     echo $i . '<br>';
 //     echo $film['title'] . '<br>';
@@ -22,4 +22,13 @@ include './inc/pdo.php';
 //     echo '<hr>';
 //     $i++;
 // }
+ foreach (getLastMovies(10) as $film) {
+        echo $i . '<br>';
+        echo $film['title'] . '<br>';
+        echo $film['genres'] . '<br>';
+        echo $film['cast'] . '<br>';
+         echo $film['plot'] . '<br>';
+         echo '<hr>';
+         $i++;
+     }
 include './view/index.view.php';

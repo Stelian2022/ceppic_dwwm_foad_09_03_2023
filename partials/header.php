@@ -13,7 +13,7 @@ session_start();
     <title>view</title>
 </head>
 <?php
-var_dump($_SESSION['login']);
+// var_dump($_SESSION['login']);
 ?>
 
 <body>
@@ -21,15 +21,15 @@ var_dump($_SESSION['login']);
         <h1>Movies</h1>
         <nav>
             <ul>
-                <?php if (($_SESSION['login'])) { ?>
+                <!-- <?//php if (($_SESSION['login'])) { ?>
                     <li>
                         <a href="./login/deconnexion.php">Deconnection</a>
                     </li>
-                <?php } else { ?>
+                <?//php } else { ?>
                     <li>
                         <a href="./login/deconnexion.php">Connection</a>
                     </li>
-                <?php } ?>
+                <?//php } ?> -->
             </ul>
         </nav>
     </div>

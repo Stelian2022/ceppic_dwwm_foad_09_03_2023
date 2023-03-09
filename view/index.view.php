@@ -4,7 +4,7 @@ include './partials/footer.php';
 ?>
 <?php
 $i = 1;
-foreach (getLimitMovies(5) as $film) {
+foreach (getLimitMovies(10) as $film) {
 ?>
     <?= $i ?> <br>
     <?= $film['title'] ?><br>
