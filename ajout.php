@@ -11,9 +11,9 @@ $resultat = $conn->prepare($sql);
 
 // Liaison des paramètres avec les valeurs du nouveau film
 $resultat->bindValue(':title', $title, PDO::PARAM_STR);
-$resultat->bindValue(':slug', $year, PDO::PARAM_INT);
-$resultat->bindValue(':genres', $year, PDO::PARAM_INT);
-$resultat->bindValue(':directors', $director, PDO::PARAM_STR);
+$resultat->bindValue(':slug', $slug, PDO::PARAM_INT);
+$resultat->bindValue(':genres', $genres, PDO::PARAM_INT);
+$resultat->bindValue(':directors', $directors, PDO::PARAM_STR);
 $resultat->bindValue(':year', $year, PDO::PARAM_INT);
 
 
@@ -28,4 +28,6 @@ if ($resultat->rowCount() > 0) {
 }
 
 // Fermeture de la connexion à la base de données
-$pdo = null;
+$conn = null;
+
+include './partials/footer.php';

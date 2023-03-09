@@ -8,7 +8,7 @@ include './partials/header.php';
 if (isset($_GET['id']) && is_numeric($_GET['id'])) :
   $id = trim($_GET['id']);
 else :
-    exit('Le film n\'est pas disponible');
+  exit('Le film n\'est pas disponible');
 endif;
 
 

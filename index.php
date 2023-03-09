@@ -22,13 +22,13 @@ $i = 1;
 //     echo '<hr>';
 //     $i++;
 // }
- foreach (getLastMovies(10) as $film) {
-        echo $i . '<br>';
-        echo $film['title'] . '<br>';
-        echo $film['genres'] . '<br>';
-        echo $film['cast'] . '<br>';
-         echo $film['plot'] . '<br>';
-         echo '<hr>';
-         $i++;
-     }
+foreach (getLastMovies(10) as $film) {
+    echo $i . '<br>';
+    echo $film['title'] . '<br>';
+    echo $film['genres'] . '<br>';
+    echo $film['cast'] . '<br>';
+    echo $film['plot'] . '<br>';
+    echo '<hr>';
+    $i++;
+}
 include './view/index.view.php';
