@@ -57,12 +57,13 @@ function getLimitMovies($valeur)
 function getLastMovies($valeur)
 {
     global $conn;
-    $sqlRequest = "SELECT * FROM movies ORDER BY id DESC LIMIT :valeur";
+    $sqlRequest = "SELECT * FROM movies_full ORDER BY id DESC LIMIT :valeur";
     $resultat = $conn->prepare($sqlRequest);
     $resultat->bindValue(':valeur', $valeur, PDO::PARAM_INT);
     $resultat->execute();
     return $resultat->fetchAll();
 }
+//test donction addMovie ??
 // function addMovies($valeur)
 // {
 //     global $conn;
