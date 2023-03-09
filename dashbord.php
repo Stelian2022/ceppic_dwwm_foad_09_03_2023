@@ -30,8 +30,8 @@ include './partials/header.php';
                     <td class="tab"> <?= $film['title'] ?></td>
                     <td class="tab"><?= $film['genres'] ?></td>
                     <td class="tab"><?= $film['year'] ?></td>
-                    <td class="tab"><a href="./edit.php?id=<?= $film['id'] ?>" class="button"> Edit</button>
-                            <a href="./edit.php?id=<?= $film['id'] ?>" class="button"> Supression</button>
+                    <td class="tab"><a href="./edit.php?id=<?= $film['id'] ?>" class="button"> Editer</button>
+                            <a href="./edit.php?id=<?= $film['id'] ?>" class="button"> Supprimer</button>
 
 
                     </td>
