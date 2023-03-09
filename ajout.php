@@ -4,7 +4,7 @@ include './inc/pdo.php';
 include './partials/header.php';
 ?>
 <?php
-$sqlRequest = "INSERT INTO movies (title, slug, genres, directors, year) VALUES (:title, :director, :year)";
+$sqlRequest = "INSERT INTO movies_full (title, slug, genres, directors, year) VALUES (:title, :slug, :genres, :director, :year)";
 
 // Préparation de la requête SQL
 $resultat = $conn->prepare($sql);
