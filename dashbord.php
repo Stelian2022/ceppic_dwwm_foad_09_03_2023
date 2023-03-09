@@ -23,7 +23,7 @@ include './partials/header.php';
         <tbody>
 
             <?php
-            foreach (getLimitMovies(10) as $film) {
+            foreach (getLastMovies(10) as $film) {
             ?>
                 <tr>
                     <td class="tab"><?= $film['id'] ?></td>
